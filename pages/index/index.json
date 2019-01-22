@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-search": "../../libs/dist/search/index",
+    "van-tab": "../../libs/dist/tab/index",
+    "van-tabs": "../../libs/dist/tabs/index",
+    "data-ui": "../../components/data-ui/data-ui"
+  }
+}

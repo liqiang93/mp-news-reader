@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-tree-select": "../../libs/dist/tree-select/index",
+    "van-button": "../../libs/dist/button/index"
+  }
+}

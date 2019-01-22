@@ -1,0 +1,135 @@
+/* pages/course/course.wxss */
+
+.swiper-distance {
+  text-align: center;
+}
+
+.swiper-layout {
+  width: 97%;
+  margin-left: 12rpx;
+}
+
+.swiper {
+  height: 309rpx;
+  width: 97%;
+  display: inline-block;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.halving-line {
+  background: #eee;
+  min-height: 20rpx;
+  width: 100%;
+}
+
+.hot-sell {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+  margin-top: 20px;
+}
+
+.title-layout {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.title {
+  font-family: PingFangSC-Medium;
+  font-size: 34rpx;
+  color: #000;
+  margin-left: 3%;
+}
+
+.image-size {
+  width: 170rpx;
+  height: 300rpx;
+}
+
+.image-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-layput {
+  margin-left: 4%;
+  height: 300rpx;
+}
+
+.headline {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #000;
+  height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 446rpx;
+}
+
+.entry {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #999;
+  height: 60rpx;
+  /* display: table-cell;
+  vertical-align: middle; */
+}
+
+.tag {
+  font-family: PingFangSC-Regular;
+  font-size: 11px;
+  color: #606266;
+  letter-spacing: 0;
+  background: rgba(96, 98, 102, 0.1);
+  border-radius: 24rpx;
+  line-height: 40rpx;
+  margin-right: 20rpx;
+  margin-bottom: 30rpx;
+  padding: 0 16rpx;
+  text-align: center;
+}
+
+.money {
+  font-size: 25rpx;
+  color: #08f;
+  height: 150rpx;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.number {
+  font-size: 35rpx;
+  font-weight: 900;
+}
+
+.tag-layout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 4%;
+}
+
+.more {
+}
+
+.more-button {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #606266;
+  text-align: center;
+  height: 80rpx;
+  line-height: 84rpx;
+}
+
+.more-image {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 10.8rpx;
+}

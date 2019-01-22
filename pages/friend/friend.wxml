@@ -1,0 +1,16 @@
+<!--pages/friend/friend.wxml-->
+<view class="friend-layout" wx:for="{{friendContent}}">
+  <view class="head-portrait">
+    <image class="photo" src="{{item.headPortrait}}"></image>
+  </view>
+  <view class="contents">
+    <view class="name">{{item.name}}</view>
+    <view class="tag">{{item.tag}}</view>
+    <view class="title">{{item.title}}:</view>
+    <view class="article">{{item.event}}</view>
+    <view class="image-layout">
+      <text class="time">{{item.time}}</text>
+      <image class="image" src="../../images/friend-comment.png" bind:tap="comment"></image>
+    </view>
+  </view>
+</view>

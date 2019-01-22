@@ -1,0 +1,19 @@
+<view class="image-layout" bindtap="skipArticle">
+  <image class="imageSize" src="https://pic.36krcnd.com/201901/17035843/6vasqwt9bkpyj1v1!1200"></image>
+</view>
+
+<view wx:for="{{findContent}}">
+  <view class="article-layout">
+    <view class="title">{{item.title}}</view>
+    <view class="article-content">{{item.event}}
+    </view>
+    <view class="comment-layout">
+      <view class="comment">
+        <text class="name">{{item.name}}:</text>{{item.comment}}</view>
+    </view>
+    <view class="image-layout">
+      <image class="image-comment" src="../../images/comment.png" bindtap="comment"></image>
+      <image class="image-edit" src="../../images/edit.png" bindtap="edit"></image>
+    </view>
+  </view>
+</view>

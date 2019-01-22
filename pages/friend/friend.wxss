@@ -1,0 +1,85 @@
+/* pages/friend/friend.wxss */
+
+.friend-layout {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  box-shadow: 0 10px 40px -5px rgba(61, 75, 102, 0.10);
+  margin-top: 20rpx;
+}
+
+.head-portrait {
+  margin-top: 20rpx;
+}
+
+.contents {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.name {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #000;
+  height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 446rpx;
+}
+
+.photo {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.tag {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #999;
+  height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 600rpx;
+}
+
+.title {
+  font-family: PingFangSC-Medium;
+  font-size: 29rpx;
+  color: #000;
+  height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 446rpx;
+}
+
+.article {
+  font-family: PingFangSC-Regular;
+  font-size: 27rpx;
+  color: #000;
+  letter-spacing: 0.58rpx;
+  width: 97%;
+}
+
+.image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+}
+
+.image-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.time {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #999;
+  height: 60rpx;
+}

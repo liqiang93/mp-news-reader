@@ -1,0 +1,167 @@
+<!--pages/mine/mine.wxml-->
+<view class="head-portrait-layout">
+  <view class="head-portrait">
+    <view class="head-portrait-location">
+      <image class="head-portrait-size" src="https://i.yunxi.tv/f326ecd6-60a0-48d8-a7de-b145e0cfd0ea"></image>
+    </view>
+    <view class="tag-layout">
+      <view class="name-layout">
+        <text class="name">潇洒哥</text>
+        <text class="tag">写点什么，介绍你自己吧</text>
+      </view>
+      <view class="image-layout">
+        <image class="detail" src="../../images/detail.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="task">
+    <view class="headline-layout">
+      <image class="image-size-shopping" src="../../images/shopping.png"></image>
+      <text class="headline">积分商城</text>
+    </view>
+    <view class="headline-layout">
+      <image class="image-size" src="../../images/task.png"></image>
+      <text class="headline">积分任务</text>
+    </view>
+    <view class="headline-layout">
+      <image class="image-size" src="../../images/sign-in.png"></image>
+      <text class="headline">签到</text>
+    </view>
+    <view class="headline-layout">
+      <image class="image-size" src="../../images/red-pocket.png"></image>
+      <text class="headline">打卡赢现金</text>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size-message" src="../../images/message-center.png"></image>
+      <text class="font">消息中心</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-attention.png"></image>
+      <text class="font">我的关注</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size-comment" src="../../images/my-comment.png"></image>
+      <text class="font">我的评论</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-collect.png"></image>
+      <text class="font">我的收藏</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="record">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-browse.png"></image>
+      <text class="font">浏览记录</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-pocket.png"></image>
+      <text class="font">我的钱包</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-course.png"></image>
+      <text class="font">我的课程</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="record">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-order.png"></image>
+      <text class="font">已订专栏</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-report.png"></image>
+      <text class="font">寻求报道</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="messageCenter">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-idea.png"></image>
+      <text class="font">意见反馈</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="records">
+  <view class="message">
+    <view class="center">
+      <image class="image-size" src="../../images/my-setting.png"></image>
+      <text class="font">设置</text>
+    </view>
+    <view>
+      <image class="img" src="../../images/detail.png"></image>
+    </view>
+  </view>
+</view>

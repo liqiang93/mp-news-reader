@@ -1,0 +1,129 @@
+<!--pages/index/index.wxml-->
+<view class="data-service-line">
+  <image class="data" src="../../images/data.png" bindtap="selectDate"></image>
+  <data-ui avatar='{{ shareContent.avatar }}' nickname='{{ shareContent.nickname }}' awardMoney='{{ shareContent.awardMoney }}' showShareModel='{{ shareContent.showShareModel }}'></data-ui>
+
+  <view class="van-serch-width">
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词"></van-search>
+  </view>
+</view>
+
+<van-tabs active="{{ active }}" bind:change="handleTabChange">
+  <van-tab wx:for="{{list}}" title="{{item.title}}">
+  </van-tab>
+</van-tabs>
+
+<!--推荐-->
+<view class="swiper-layout" wx:if="{{id == 0 || !id}}">
+  <scroll-view scroll-y="true" class="swiper-distance">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000" catchtap="selectImge">
+      <block wx:for="{{movies}}" wx:for-index="index">
+        <swiper-item>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill" data-currentId="{{item.id}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view wx:for="{{activities}}" class="title-layout" data-articleId="{{item.id}}" bindtap="selectArticle">
+      <view class="title-font">
+        <text class="title">{{item.title}}</text>
+        <text class="title-label">{{item.username}}</text>
+      </view>
+      <image class="title-img" src="{{item.coverUrl}}"></image>
+    </view>
+  </scroll-view>
+</view>
+
+<!--关注-->
+<view wx:elif="{{id == 1}}">
+  <scroll-view scroll-y="true" class="swiper-distance">
+    <view class="more-display" bindtap="searchMore">
+      <image class="more" src="../../images/more.png"></image>
+      <text class="explore">探索更多</text>
+    </view>
+
+    <view wx:for="{{attention}}" class="title-activities" data-articleId="{{item.id}}" bindtap="selectArticle">
+      <view class="title-font">
+        <text class="title">{{item.title}}</text>
+        <text class="title-label">{{item.username}}</text>
+      </view>
+      <image class="title-img" src="{{item.coverUrl}}"></image>
+    </view>
+  </scroll-view>
+</view>
+
+<!--热榜-->
+<view wx:elif="{{id == 2}}">
+  <scroll-view scroll-y="true" class="swiper-distance">
+    <view wx:for="{{activities}}" class="title-activities" data-articleId="{{item.id}}" bindtap="selectArticle">
+      <view class="title-font">
+        <text class="title">{{item.title}}</text>
+        <text class="title-label">{{item.username}}</text>
+      </view>
+      <image class="title-img" src="{{item.coverUrl}}"></image>
+    </view>
+  </scroll-view>
+</view>
+
+<!--快讯-->
+<view wx:elif="{{id == 3}}">
+  <scroll-view scroll-y="true" class="swiper-distance">
+    <view class='weui-cell-third'>
+      <view class="page__title">
+        <text class='page-title' />今天</view>
+      <block wx:for="{{flashList}}" wx:key="*this">
+        <view class='weui-cell-list'>
+          <view class='weui-cell-circle'></view>
+          <view class='weui-cell-line'>
+            <view class='weui-cell-time'>{{item.time}}</view>
+            <view class='weui-cell-name'>{{item.title}}</view>
+            <view class='weui-cell-event'>{{item.event}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+
+<!--视频-->
+<view wx:elif="{{id == 4}}">
+  <scroll-view scroll-y="true" class="swiper-distance">
+    <view class="video-layout" wx:for="{{videoList}}">
+      <video class="video-size" id="myVideo" src="{{item.kerUrl}}" poster="{item.avatar}" controls="true"></video>
+      <view class="avatar-layout">
+        <view class="video-information">
+          <image class="video-logo" src="{{item.avatar}}"></image>
+          <text class="video-name">{{item.username}}</text>
+        </view>
+        <view class="image-layout">
+          <image class="message-size" src="../../images/message.png"></image>
+          <image class="transmit-size" src="../../images/transmit.png"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<!--科技-->
+<view wx:elif="{{id == 5}}">
+  <view class='imagesize'>
+    <image mode='aspectFill' class='image' src="../../images/follow-null.png"></image>
+    <view class="no-attention">暂无内容</view>
+  </view>
+</view>
+
+<!--生活-->
+<view wx:elif="{{id == 6}}">
+  <view class='imagesize'>
+    <image mode='aspectFill' class='image' src="../../images/follow-null.png"></image>
+    <view class="no-attention">暂无内容</view>
+  </view>
+</view>
+
+<!--职场-->
+<view wx:else>
+  <view class='imagesize'>
+    <image mode='aspectFill' class='image' src="../../images/follow-null.png"></image>
+    <view class="no-attention">暂无内容</view>
+  </view>
+</view>

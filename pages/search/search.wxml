@@ -1,0 +1,9 @@
+<!--pages/search/search.wxml-->
+ <van-tree-select
+    items="{{ items }}"
+    main-active-index="{{ mainActiveIndex }}"
+    active-id="{{ activeId }}"
+    bind:click-item="onClickItem"
+    bind:click-nav="onClickNav"
+    content-active-class="content-active-class"
+  ></van-tree-select>

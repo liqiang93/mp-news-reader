@@ -1,0 +1,19 @@
+<!--pages/more/more.wxml-->
+
+<!--课程分类-->
+<view wx:for="{{arrayCourse.children}}">
+  <view class="hot-sell" data-courseId="{{item.id}}" bindtap="selectCourse">
+    <view class="image-layout">
+      <image class="image-size" src="{{item.coverUrl}}"></image>
+    </view>
+    <view class="title-layput">
+      <view class="headline">{{item.title}}</view>
+      <view class="entry">{{item.content}}</view>
+      <view class="tag-layout">
+        <view class="tag">{{item.tag}}</view>
+      </view>
+      <view class="money">
+        <text class="number">{{item.money}}</text>/份</view>
+    </view>
+  </view>
+</view>
