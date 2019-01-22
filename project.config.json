@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.4.3",
 	"appid": "wxa53d56ea5a0ce5e8",
-	"projectname": "36%E6%B0%AA",
+	"projectname": "js-news-reader",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
